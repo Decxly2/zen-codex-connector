@@ -1,0 +1,10 @@
+{
+  "name": "zen-codex-connector",
+  "version": "0.3.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "setup": "node setup.mjs",
+    "test": "node --test test.mjs automatic-access.test.mjs security-audit.test.mjs"
+  }
+}

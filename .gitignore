@@ -1,0 +1,5 @@
+connection.json
+*.xpi
+*.zip
+node_modules/
+.env*
