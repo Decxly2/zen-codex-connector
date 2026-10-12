@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Zen connector pairing</title>
+    <style>
+      body {
+        font: 16px system-ui;
+        max-width: 600px;
+        margin: 40px auto;
+        padding: 20px;
+      }
+      input {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 12px;
+      }
+      button {
+        margin-top: 14px;
+        padding: 10px 18px;
+      }
+      #status {
+        min-height: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Connect Zen to Codex</h1>
+    <p>
+      Enter the local pairing key from your connector's connection.json file. It
+      is stored in this extension's local storage and sent only to the connector
+      on this computer.
+    </p>
+    <label for="token">Local pairing key</label
+    ><input id="token" type="password" autocomplete="off" spellcheck="false" />
+    <button id="save">Save pairing key</button>
+    <p id="status" role="status"></p>
+    <p>
+      All ordinary HTTP(S) tabs are available automatically. Private windows and
+      browser pages are excluded. Click the extension toolbar button to pause or
+      resume access globally; this choice persists across restarts. Pages are
+      read only when Codex requests them. Page text and tab addresses requested
+      by Codex may enter your AI conversation. No analytics, advertising,
+      cookies, browser history, or password-manager access is included.
+    </p>
+    <script src="options.js"></script>
+  </body>
+</html>
